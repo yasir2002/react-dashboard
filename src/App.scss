@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+// styles.scss
+
+// Import variables
+@import './Styles/variables.scss';
+
+// Your additional styles go here
+body {
+  font-family: $base-font-family;
+  background-color: $background-color;
+  color: $text-color;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: $heading-1;
+  color: $primary-color;
+}
+p {
+  font-size: $base-font-size;
+  margin-bottom: $margin-bottom;
+  color: $secondary-color;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// Add more styles as needed
